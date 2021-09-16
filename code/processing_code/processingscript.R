@@ -15,7 +15,7 @@ data_location <- here::here("data","raw_data","NNDSS Hep.csv")
 
 #load data
 
-rawdata <- read.csv("~/Documents/School/Fall 2021/MADA/SophiaDrewry-MADA-analysis2/data/raw_data/NNDSS Hep.csv")
+rawdata <- read.csv(data_location)
 
 #take a look at the data
 dplyr::glimpse(rawdata)
@@ -53,6 +53,6 @@ processedFINAL <- subset(processed2, area == "S. ATLANTIC")
 # location to save file
 "~/Documents/School/Fall 2021/MADA/SophiaDrewry-MADA-analysis2/data/processed_data/" <- here::here("data","processed_data","processedFINAL.rds")
 
-saveRDS(processedFINAL, file = data_location
+saveRDS(processedFINAL, file = data_location)
 
 
